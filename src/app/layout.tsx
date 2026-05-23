@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fredoka, Nunito, Inter, Quicksand } from "next/font/google";
 import "./globals.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const fredoka = Fredoka({
   variable: "--font-logo",
