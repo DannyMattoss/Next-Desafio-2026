@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@theme {
+    --color-mescuro: #876264;
+    --color-mclaro: #A67E7E;
+    --color-bege: #F6EEDD;
+    --color-rosasujo: #D9B5C9;
+    --font-logo: var(--font-logo), sans-serif;
+}
