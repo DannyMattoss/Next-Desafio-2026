@@ -6,4 +6,6 @@
     --color-rosasujo: #D9B5C9;
     --font-logo: var(--font-logo), sans-serif;
     --font-subtitulo: var(--font-subtitulo), sans-serif;
+    --font-texto: var(--font-texto), sans-serif;
+    --font-titulo: var(--font-titulo), sans-serif;
 }
