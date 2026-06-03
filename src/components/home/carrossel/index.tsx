@@ -55,7 +55,7 @@ export default function Carrossel() {
           nextEl: ".custom-swiper-button-next",
         }}>
         {cards.map((card, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide className="py-4 px-2" key={index}>
                <Card/>
             </SwiperSlide>
         ))}

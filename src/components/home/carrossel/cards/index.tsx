@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Card() {
   return (
-    <div className="flex flex-col bg-rosasujo rounded-2xl p-2.5">
+    <div className="flex flex-col bg-rosasujo rounded-2xl p-2.5 shadow-[4px_4px_4px_rgba(135,98,100,1)]">
       <Image
         width={1000}
         height={1000}
