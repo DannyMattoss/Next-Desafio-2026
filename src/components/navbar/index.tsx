@@ -10,19 +10,19 @@ export default function Navbar() {
         },
         {
             name: "Contato",
-            url: "/",
+            url: "/contact",
         },
         {
             name: "Álbuns",
-            url: "/",
+            url: "/products",
         },
         {
             name:"Dashboard",
-            url: "/",
+            url: "/dashboard",
         },
         {
             name: "Login",
-            url: "/",
+            url: "/login",
         },
 
 
