@@ -8,42 +8,10 @@ import Card from "./cards";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import {cards} from "../../products/cards.ts";
 
 export default function Carrossel() {
-    const cards = [ 
-        {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-        {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-    ]
+    
   return (
     <section className=" relative w-full px-36 py-16">
       <Swiper className= "" modules={[Navigation]}
@@ -55,8 +23,13 @@ export default function Carrossel() {
           nextEl: ".custom-swiper-button-next",
         }}>
         {cards.map((card, index) => (
-            <SwiperSlide className="py-4 px-2" key={index}>
-               <Card/>
+            <SwiperSlide className="!h-full py-4 px-2" key={index}>
+               <Card key={index}
+                  imagem="/assets/ampulheta.jpg"
+                  titulo={card.titulo}
+                  descricao={card.descricao}
+                  preco={card.preco}
+                  />            
             </SwiperSlide>
         ))}
 

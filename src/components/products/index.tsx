@@ -5,69 +5,12 @@ import Link from "next/link";
 import Card from "../home/carrossel/cards";
 import { useState } from "react";
 import Pagination from "./paginação";
+import {cards} from "./cards.ts";
 
 const ITEMS_PER_PAGE = 8;
 
 export default function Products() {
-    const cards = [ 
-        {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-        {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                {
-            name:"Home",
-            url: "/",
-        },
-                 {
-            name:"Home",
-            url: "/",
-        },
-                 {
-            name:"Home",
-            url: "/",
-        },
-                 {
-            name:"Home",
-            url: "/",
-        },
-                 {
-            name:"Home",
-            url: "/",
-        },
-                 {
-            name:"Home",
-            url: "/",
-        },
-                 {
-            name:"Home",
-            url: "/",
-        },
 
-    ]
     const totalPages=Math.ceil(cards.length/ITEMS_PER_PAGE);
     const [currentPage, setCurrentPage] = useState(1);
     const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -91,7 +34,12 @@ export default function Products() {
         </div>
         <div className=" grid grid-cols-4 w-full px-36 py-16 gap-x-6 gap-y-12">
             {currentItems.map((card, index) => (
-                <Card key={index}/>             
+                <Card key={index}
+                imagem="/assets/ampulheta.jpg"
+                titulo={card.titulo}
+                descricao={card.descricao}
+                preco={card.preco}
+                />             
             ))}
         </div>
         <Pagination
@@ -99,6 +47,7 @@ export default function Products() {
             handlePageChange={handlePageChange}
             totalPages={totalPages}
         />
+    
     </section>
   );
 }
