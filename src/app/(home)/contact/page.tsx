@@ -1,6 +1,5 @@
 'use client';
 
-
 export default function Contato() {
   return (
      <main className="bg-bege">
